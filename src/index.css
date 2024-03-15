@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #4e2bb7de;
+  --green: #24CA20;
+  --bg-color: #fff;
+  --selected: #E6F9E6;
+  --rejected: #FF6969;
+  --partially-selected: #FF9843;
+  --pending: #f2f2f2;
+  --font-color: #666;
+  --mobile-view-padding: 0 1rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* cursor: url('./assets/cursor_5300532.png'), auto; */
+}

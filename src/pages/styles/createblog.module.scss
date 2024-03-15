@@ -1,0 +1,94 @@
+.mainWindow {
+    height: 100vh;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    gap: 1rem;
+    // background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-color: snow;
+
+    .createBlog {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3rem;
+        width: 50%;
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            // width: 40%;
+            gap: .8rem;
+
+            input {
+                padding: .5rem;
+                font-family: inherit;
+                width: 100%;
+                outline: none;
+                border: none;
+                background-color: whitesmoke;
+                z-index: 2;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            }
+
+            textarea {
+                padding: .5rem;
+                font-family: inherit;
+                outline: none;
+                border: none;
+                background-color: whitesmoke;
+                z-index: 2;
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                resize: vertical;
+            }
+
+        }
+
+        button {
+            color: white;
+            z-index: 2;
+            background-color: var(--blue);
+            // width: 40%;
+            border: 2px solid var(--blue);
+            font-family: inherit;
+            width: 40%;
+            padding: .5rem 1.2rem;
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: 500;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:1080px) {
+    .mainWindow {
+        .createBlog{
+            width: 80%;
+            margin-right: 1rem;
+        }
+        
+
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .mainWindow {
+
+        .inputs {
+            width: 80%;
+        }
+
+        button {
+            width: 80%;
+        }
+
+    }
+}

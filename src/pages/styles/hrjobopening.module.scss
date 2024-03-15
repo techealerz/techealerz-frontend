@@ -1,0 +1,107 @@
+.mainWindow {
+    display: flex;
+    min-height: 100vh;
+
+    .jobForm {
+        display: flex;
+        margin-left: 250px;
+        flex-grow: 1;
+
+        .createJob {
+            // background-color: blanchedalmond;
+            width: 50%;
+            padding: 2rem;
+
+            .jobOpeningTitle {
+                color: var(--blue);
+                font-weight: 500;
+                font-size: 1.7rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .jobMainForm {
+                display: flex;
+                flex-direction: column;
+                gap: .4rem;
+                margin-top: 4rem;
+                width: 80%;
+                margin: auto;
+
+                .inputs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3rem;
+
+                    input {
+                        font-family: inherit;
+                        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                        padding: .5rem;
+                        outline: none;
+                        border: none;
+
+                        &::placeholder {
+                            font-family: inherit;
+                        }
+                    }
+                }
+
+                .submitButton {
+                    margin-top: 1rem;
+                    color: white;
+                    background-color: var(--blue);
+                    padding: .4rem;
+                    border: 2px solid var(--blue);
+                    font-family: inherit;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .currentVacancy {
+            // background-color: red;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+
+            table {
+                margin-top: 2.5rem;
+                height: max-content;
+                width: 80%;
+                border-collapse: collapse;
+                overflow-x: auto;
+                thead {
+                    background-color: #96e6a1;
+
+                    tr {
+                        th {
+                            font-weight: 400;
+                            padding: .5rem;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        background-color: var(--selected);
+
+                        td {
+                            text-align: center;
+                        }
+
+                        button {
+                            background-color: var(--rejected);
+                            color: white;
+                            border-radius: 10px;
+                            padding: .2rem;
+                            border: none;
+                            border: 1px solid var(--rejected);
+                            width: 70%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

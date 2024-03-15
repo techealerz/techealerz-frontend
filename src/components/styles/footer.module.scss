@@ -1,0 +1,196 @@
+.footerWindow {
+    padding: 3rem 2.5rem;
+    // border-top: 2px solid var(--blue);
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 5px 15px 0px;
+
+    .footerContent {
+        display: flex;
+        margin-bottom: 4rem;
+        gap: 9rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footerLogo {
+            img {
+                margin-top: .4rem;
+                width: 5rem;
+            }
+        }
+
+        .text {
+            display: flex;
+            gap: 2.5rem;
+            // width: 40%;
+
+            .company {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+
+                h1 {
+                    color: var(--blue);
+                    font-weight: 500;
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 1rem;
+                    width: 60%;
+                }
+            }
+
+        }
+
+        .contactUsSection {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .contactUsLinks {
+                display: flex;
+                gap: 2rem;
+
+                .contactUsLink {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 48px;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        p {
+                            font-size: .8rem;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .socialMediaSection {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .socialMediaLinks {
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+
+                a {
+                    text-decoration: none;
+                    padding: 0;
+                }
+
+                .socialMediaLink {
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            font-size: .8rem;
+                        }
+    
+                        img {
+                            width: 48px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: .8rem;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.914);
+        margin-top: .7rem;
+    }
+}
+
+// 13 inch laptop 
+
+@media screen and (max-width:1380px) {
+    .footerWindow {
+        .footerContent {
+            .text{
+                width: 40%;
+            }
+        }
+    }
+}
+
+// Tab view
+
+@media screen and (max-width : 1080px) {
+    .footerWindow {
+        padding: 2rem;
+
+        .footerContent {
+            .text {
+                flex-direction: column;
+                align-items: center;
+
+                .company {
+                    h1 {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// mobile view
+
+@media screen and (max-width : 600px) {
+    .footerWindow {
+        padding: 2rem;
+
+        .footerContent {
+            flex-direction: column;
+            align-items: center;
+            gap: 3.5rem;
+
+            .text {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 1rem;
+
+                .company {
+                    h1 {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

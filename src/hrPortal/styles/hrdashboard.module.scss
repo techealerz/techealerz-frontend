@@ -1,0 +1,33 @@
+.mainWindow {
+    display: flex;
+
+    .tiles {
+        flex-grow: 1;
+        display: flex;
+        padding: 2rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 280px;
+    }
+}
+
+
+// tab view
+@media screen and (max-width:960px) {
+    .mainWindow{
+        .tiles{
+            flex-direction: column;
+        }
+    }
+}
+
+// mobile view
+
+@media screen and (max-width:600px) {
+    .mainWindow{
+        .tiles{
+            margin-left: 170px;
+        }
+    }
+}

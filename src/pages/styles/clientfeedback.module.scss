@@ -1,0 +1,102 @@
+.mainWindow {
+    .mainContent {
+        padding: 8rem 4rem;
+        // background-color: whitesmoke;
+        // background-color: #f3ccff29;
+        background-color: #ac87c52f;
+        .pageHeading {
+            font-size: 2.3rem;
+            text-align: center;
+            color: var(--blue);
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        .clientForm {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+            row-gap: 2rem;
+            padding: 0 3rem;
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                gap: .7rem;
+                width: 40%;
+
+                label {
+                    text-align: justify;
+                }
+
+                input {
+                    padding: .5rem;
+                    outline: none;
+                    border: none;
+                    font-family: inherit;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                }
+            }
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
+            background-color: var(--blue);
+            color: white;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 1rem;
+            width: 25%;
+            padding: .6rem;
+            border: 2px solid var(--blue);
+        }
+    }
+}
+
+// tab view
+
+@media screen and (max-width:1080px) {
+    .mainWindow {
+        .mainContent {
+            .clientForm {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                .inputs{
+                    width: 70%;
+                }
+            }
+            button{
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+// mobile view
+
+@media screen and (max-width:600px) {
+    .mainWindow {
+        .mainContent {
+            padding-left: .5rem;
+            padding-right: .5rem;
+            .pageHeading {
+                font-size: 1.9rem;
+                font-weight: 500;
+            }
+            .clientForm {
+                padding: 0;
+                .inputs{
+                    width: 90%;
+                }
+            }
+            button{
+                width: 50%;
+            }
+        }
+    }
+}

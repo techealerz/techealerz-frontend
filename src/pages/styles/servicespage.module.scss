@@ -1,0 +1,21 @@
+.cards{
+    padding: 8rem 4rem;
+    padding-top: 10rem;
+    // background-color: #f3ccff29;
+    background-color: #ac87c52f;
+    // background-color: rgba(245, 245, 245, 0.382);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    background-color:#F1EAFF;
+    
+}
+
+// mobile view
+@media screen and (max-width:600px) {
+    .cards{
+        padding: 8rem 1.4rem;
+        justify-content: center;
+    }
+}

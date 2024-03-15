@@ -1,0 +1,60 @@
+.mainWindow {
+    display: flex;
+
+    
+
+    .mainContent {
+        flex-grow: 1;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: var(--blue);
+            margin-top: 3rem;
+            font-size: 2.3rem;
+            font-weight: 500;
+        }
+
+        .trainingTable {
+            width: 80%;
+            overflow-x: auto;
+            table {
+                margin-top: 2rem;
+                border-collapse: collapse;
+                width: 100%;
+                thead{
+                    tr{
+                        background-color: var(--selected);
+                        text-align: left;
+                        th{
+                            padding: .3rem .5rem;
+                        }
+                        
+                    }
+                }
+                tbody{
+                    tr{
+                        // color: var(--font-color);
+                        &:nth-child(odd){
+                            background-color:rgba(211, 211, 211, 0.26);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mainWindow {
+        .mainContent {
+            align-items: flex-start;
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

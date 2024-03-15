@@ -1,0 +1,63 @@
+.card {
+  
+    // padding: .4rem;
+    a {
+    background-color: white;
+        text-decoration: none;
+        width: 300px;
+        height: 250px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        color: black;
+
+        p {
+            font-weight: 200;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .image {
+            height: 80%;
+            overflow: hidden;
+
+            img {
+                display: block;
+                object-fit: contain;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+                transition: all ease .2s;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .cardTitle{
+            font-size: 1.2rem;
+        }
+
+    }
+
+}
+
+
+// mobile view
+
+@media screen and (max-width:600px) {
+    .card{
+        a{
+            width: 200px;
+            height: 200px;
+            
+            .cardTitle{
+                font-size: 1rem;
+            }
+        }
+    }
+}

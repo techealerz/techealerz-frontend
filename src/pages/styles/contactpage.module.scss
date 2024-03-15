@@ -1,0 +1,140 @@
+.section1 {
+    padding: 8rem 4rem;
+    // background-color: #f3ccff29;
+    background-color: #ac87c52f;
+
+    h1 {
+        font-size: 2.3rem;
+        font-weight: 400;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    p {
+        color: var(--blue);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .contactUsSection {
+        display: flex;
+
+        .contactUsForm {
+            width: 50%;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            .input {
+                display: flex;
+                flex-direction: column;
+                gap: .7rem;
+
+                input {
+                    width: 70%;
+                    border: none;
+                    outline: none;
+                    padding: .5rem;
+                    font-family: inherit;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.774);
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                }
+
+                textarea {
+                    border: none;
+                    outline: none;
+                    padding: .5rem;
+                    font-family: inherit;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.774);
+                    resize: vertical;
+                    width: 70%;
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                }
+            }
+
+            button {
+                padding: .8rem;
+                color: white;
+                background-color: var(--blue);
+                width: 55%;
+                font-family: inherit;
+                border: 2px solid var(--blue);
+                font-size: 1.3rem;
+                transition: .3s;
+                margin-top: 2rem;
+                transition: all ease .3s;
+
+                &:active {
+                    scale: .9;
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: var(--blue);
+                }
+            }
+        }
+
+        .info {
+            width: 50%;
+            padding: 2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            p {
+                font-weight: 400;
+                color: black;
+                text-align: justify;
+
+                &:nth-child(3) {
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+}
+
+// mobile view
+@media screen and (max-width:600px) {
+    .section1 {
+        padding: 8rem 1.5rem;
+
+        .contactUsSection {
+            flex-direction: column;
+
+            .contactUsForm {
+                width: 100%;
+
+                .input {
+                    input {
+                        width: 100%;
+                    }
+
+                    textarea {
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    margin: auto;
+                }
+            }
+
+            .info {
+                width: 100%;
+                padding: 2rem 0;
+            }
+
+            button {
+                padding: .3rem;
+                font-size: .8rem;
+            }
+        }
+    }
+
+}

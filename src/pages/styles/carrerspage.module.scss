@@ -1,0 +1,37 @@
+.carrers {
+    padding: 8rem 4rem 8rem;
+    // background-color: whitesmoke;
+    // background-color: #f3ccff29;
+    background-color: #ac87c52f;
+    h1 {
+        color: var(--blue);
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .tiles {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        justify-content: center;
+        gap: 3rem;
+        .notHiring{
+            color: var(--rejected);
+            font-size: 3rem;
+        }
+    }
+}
+
+// mobile view
+
+@media screen and (max-width:600px) {
+
+    .carrers {
+        padding: 8rem 1.5rem;
+
+        .tiles {
+            padding-top: 1.5rem;
+            justify-content: center;
+        }
+    }
+}

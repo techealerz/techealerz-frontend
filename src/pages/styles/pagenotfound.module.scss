@@ -1,0 +1,43 @@
+.mainWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: max-content;
+    }
+    button{
+        border: 2px solid var(--blue);
+        background-color: white;
+        width: 12rem;
+        padding: .5rem;
+        font-family: inherit;
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 1rem;
+        transition: all ease-out 250ms;
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: var(--blue);
+            border-color: var(--blue);
+            color: white;
+        }
+    }
+
+}
+
+
+// mobile view
+
+@media screen and (max-width:600px) {
+    .mainWindow {
+        margin-top: 5rem;
+        img {
+            max-width: 400px;
+        }
+
+    }
+}

@@ -1,0 +1,176 @@
+header {
+    padding: .7rem 1.2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    background-color: var(--bg-color);
+    z-index: 2;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+
+    img {
+        width: 4.5rem;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            padding: 1rem 1.3rem;
+            margin-right: 2rem;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            cursor: context-menu;
+            position: relative;
+            // try
+            padding-left: 0;
+            // try
+            ul {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                top: 3rem;
+                padding: .5rem 1rem;
+                width: 280px;
+                right: .1rem;
+                display: none;
+                padding-bottom: 1.5rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                li {
+                    width: 100%;
+                    // padding: .6rem .5rem;
+                    &:hover {
+                        color: var(--blue);
+                    }
+                }
+            }
+          
+
+            &:hover {
+                ul {
+                    display: unset;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                // underline
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: .3rem;
+                    width: 0%;
+                    height: 3px;
+                    background-color: var(--blue);
+                    transition: all ease .2s;
+                }
+                // underline Effect End
+                &:hover {
+                    color: var(--blue);
+                    // &::after{
+                    //     width: 40%;
+                    // }
+                }
+            }
+
+
+        }
+    }
+}
+
+.active {
+    &::before {
+        content: '';
+        width: 2.3rem;
+        height: 2.1px;
+        position: absolute;
+        bottom: 1rem;
+        background-color: var(--blue);
+    }
+}
+
+.hamburger {
+    color: var(--blue);
+    font-size: 1.1rem;
+    height: 2.5rem;
+    width: 3.7rem;
+    position: fixed;
+    right: 1.4rem;
+    display: none;
+}
+
+
+
+@media screen and (max-width : 1080px) {
+    .hamburger {
+        display: unset;
+        font-size: .7rem;
+        height: 2rem;
+    }
+
+    header {
+
+        ul {
+            background-color: rgba(250, 250, 250, 0.975);
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 70%;
+            padding-top: 6rem;
+            overflow-y: auto;
+            padding-bottom: 4rem;
+            transition: .3s;
+
+            li {
+                margin-top: 1rem;
+                padding-left: 1.5rem;
+                ul {
+                    position: relative;
+                    top: 1rem;
+                    left: 0;
+                    width: 100%;
+
+                    li {
+                        padding-top: .3rem;
+                        padding-left: 0.6rem;
+
+                        width: 100%;
+                    }
+                }
+                &::after{
+                    content: "";
+                    height: 0px;
+                    width: 0%;
+                }
+                &:hover{
+                    &::after{
+                        width: 0%;
+                    }
+                }
+            }
+
+            // border-left: 2px solid var(--blue);
+        }
+    }
+
+    .show {
+        transition: .3s;
+        transform: translateX(0);
+    }
+
+    .hide {
+        transition: .3s;
+        transform: translateX(100%);
+    }
+}

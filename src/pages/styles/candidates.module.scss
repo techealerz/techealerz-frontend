@@ -1,0 +1,99 @@
+.candidatesMainWindow {
+    display: flex;
+    .candidatesRecieved {
+        flex-grow: 1;
+        h3 {
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--blue);
+        }
+        .filterCandidates{
+            margin: auto;
+            margin-top: 2rem;
+            width: 90%;
+            display: flex;
+            gap: 2rem;
+            .applyFilter{
+                display: flex;
+                flex-direction: column;
+                gap: .8rem;
+                width: 20%;
+                select{
+                    width: 100%;
+                    padding: .3rem;
+                    border-radius: 2px;
+                    outline: none;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    font-family: inherit;
+                    option{
+                        border-radius: 0 !important;
+                        &:nth-child(odd){
+                            background-color: rgba(211, 211, 211, 0.589);
+                        }
+                        &:hover{
+                            background-color: lightgray;
+                        }
+                    }
+                }
+            }
+            .applyBtn{
+                align-self: flex-end;
+                padding: .5rem;
+                width: 10rem;
+                background-color: var(--blue);
+                color: white;
+                border: 2px solid var(--blue);
+            }
+        }
+        .candiatesTable {
+            overflow-x: auto;
+            width: 90%;
+            margin: auto;
+            table {
+                margin-top: 3rem;
+                border-collapse: collapse;
+                width: 100%;
+                overflow-x: auto;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+                thead {
+                    overflow-x: auto;
+                    tr {
+                        th {
+                            background-color:whitesmoke;
+                            overflow: hidden;
+                            font-weight: 500;
+                            text-align: left;
+
+                            &:nth-child(1) {
+                                overflow: hidden;
+                            }
+
+                            padding: .6rem;
+                        }
+                    }
+                }
+                tbody {
+                    overflow-x: auto;
+                    tr {
+                        color: var(--font-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .candidatesMainWindow {
+        .candidatesRecieved {
+            h3{
+                text-align: left;
+            }
+            .candiatesTable {
+                width: 95%;
+            }
+        }
+    }
+}
