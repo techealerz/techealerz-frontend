@@ -31,10 +31,10 @@ import rangmanch6 from '../assets/rangmanch6.jpeg';
 import { ImCross } from "react-icons/im";
 import { useEffect, useState } from "react"
 import { IoMdCloseCircle } from "react-icons/io";
-import rangmanchVideo1 from '../assets/rangmanch1.mp4'
-import rangmanchVideo2 from '../assets/rangmanch2.mp4'
-import rangmanchVideo3 from '../assets/rangmanch3.mp4'
-import rangmanchVideo4 from '../assets/rangmanch4.mp4'
+// import rangmanchVideo1 from '../assets/rangmanch1.mp4'
+// import rangmanchVideo2 from '../assets/rangmanch2.mp4'
+// import rangmanchVideo3 from '../assets/rangmanch3.mp4'
+// import rangmanchVideo4 from '../assets/rangmanch4.mp4'
 
 
 function LifeAtTechealerz() {
@@ -174,6 +174,7 @@ function LifeAtTechealerz() {
                                 </div>
                             </div>
                         }
+
                     </div>
                 </div>
                 <div className={style.newsSection}>

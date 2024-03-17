@@ -14,7 +14,8 @@ main {
         animation-range: scroll();
         // background-repeat: no-repeat;
         position: relative;
-        .glass{
+
+        .glass {
             width: 700px;
             height: 400px;
             background-color: rgba(255, 255, 255, 0.148);
@@ -224,10 +225,11 @@ main {
 // Animations 
 
 @keyframes bg {
-    from{
+    from {
         opacity: .9;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -261,6 +263,18 @@ main {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+// 13inch laptop 
+
+@media screen and (max-width:1400px) {
+    main{
+        .section1{
+            .homepageText{
+                padding: 9rem 3.8rem;
+            }
+        }
     }
 }
 
