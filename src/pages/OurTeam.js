@@ -46,13 +46,13 @@ const data = [
         name: 'prince verma',
         intro: 'Meet Prince Verma, the Senior Accountant at TecHealerz, he is an expert in the field of accounting, taxation (Direct, Indirect/ DTAA), financial reporting, analysis and compliance and provides strategic insights to meet business goals and objectives. He aspires to become a seasoned Finance professional with business acumen and leadership skills to advise, plan, develop and support company’s finance and operations within the legal framework. He is a gifted artist with exceptional creativity and talent to create fine masterpieces with his drawing, painting and sketching skills! He captures the myriad hues of emotions and weaves a story through his aesthetic work of art which transcends the realm of human imagination and self-expression!! He loves dancing, playing chess, solving puzzles and playing outdoor sports. He is sharp, methodical, focused, detail-oriented, critical thinker, excellent team player and is always ready for challenges. He believes that sharing knowledge and ideas is fundamental to learning and growth.',
         photo: princePhoto
-    },
+    }/*,
     {
         id: 7,
         name: 'hardik sharma',
         intro: 'Meet Hardik Sharma, the Human Resources Manager at TecHealerz, he has a heart of gold and is driven by his personal values and desire to work for the welfare of society by undertaking philanthropic and humanitarian causes. He believes in kindness, compassion, generosity, humanity and selflessness. He is intrigued by complexities of the human mind and analysis of behaviour patterns to gain deeper understanding of human psychology in different situations. He loves singing and playing badminton during his leisure time. He also has a background in Computer Science Engineering, which provides him the technical edge for talent acquisition and team management with utmost efficiency. He is passionate about teamwork and leadership and brings a high level of commitment, optimism, motivation, innovation and energy in the workplace to create a sustainable environment and positive work culture for all. ',
         photo:hrPhoto
-    }
+    }*/
 ]
 
 
