@@ -16,7 +16,7 @@ const data = [
         name: 'gurpreet singh',
         intro: 'Meet Gurpreet Singh, a Software Engineer at TecHealerz, an exceptional web developer whose creativity and talent has enabled the process of creating, building, designing and envisioning the TecHealerz website!! He is truly passionate about bringing ideas to life through his coding skills. In addition to his technical pursuits, he is an energetic Bhangra dancer who brings the traditional dance spirit alive with his mesmerizing performances, right from his college days, where he served as the Coordinator for the Bhangra Society!!',
         photo: gurpreetPhoto
-    },
+    }/*,
     {
         id: 2,
         name: 'garvit raheja',
@@ -46,7 +46,7 @@ const data = [
         name: 'prince verma',
         intro: 'Meet Prince Verma, the Senior Accountant at TecHealerz, he is an expert in the field of accounting, taxation (Direct, Indirect/ DTAA), financial reporting, analysis and compliance and provides strategic insights to meet business goals and objectives. He aspires to become a seasoned Finance professional with business acumen and leadership skills to advise, plan, develop and support company’s finance and operations within the legal framework. He is a gifted artist with exceptional creativity and talent to create fine masterpieces with his drawing, painting and sketching skills! He captures the myriad hues of emotions and weaves a story through his aesthetic work of art which transcends the realm of human imagination and self-expression!! He loves dancing, playing chess, solving puzzles and playing outdoor sports. He is sharp, methodical, focused, detail-oriented, critical thinker, excellent team player and is always ready for challenges. He believes that sharing knowledge and ideas is fundamental to learning and growth.',
         photo: princePhoto
-    }/*,
+    },
     {
         id: 7,
         name: 'hardik sharma',
